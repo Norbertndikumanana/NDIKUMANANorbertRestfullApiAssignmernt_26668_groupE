@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topnav">
+      <div class="tabs">
+        <a class="tab" href="index.html">Sign Up</a>
+        <a class="tab" id="searchTab" href="search.html">Search</a>
+      </div>
+      <div>
+        <button id="logout">Log out</button>
+      </div>
+    </div>
+
+    <h1 id="greet">Welcome</h1>
+    <p class="meta" id="emailLine"></p>
+    <p>This is the home page. You were redirected here after signing up.</p>
+  </div>
+
+  <script>
+    const name = (localStorage.getItem('signupName') || '').trim();
+    const email = (localStorage.getItem('signupEmail') || '').trim();
+    const greet = document.getElementById('greet');
+    const emailLine = document.getElementById('emailLine');
+    if(name) greet.textContent = `Welcome, ${name}!`;
+    if(email) emailLine.textContent = `Signed up with ${email}`;
+    if(!name && !email){ greet.textContent = 'Welcome!'; emailLine.textContent = '' }
+
+    document.getElementById('logout').addEventListener('click', function(){
+      try{ localStorage.removeItem('signupName'); localStorage.removeItem('signupEmail'); }catch(e){}
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
