@@ -1,0 +1,435 @@
+{
+  "info": {
+    "_postman_id": "38772ce3-c41e-47e6-a3db-cd6cba6f2fad",
+    "name": "Restrauntant api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52133708",
+    "_collection_link": "https://go.postman.co/collection/52133708-38772ce3-c41e-47e6-a3db-cd6cba6f2fad?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Menu",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get Menu",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:40:43 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Bruschetta\",\n        \"description\": \"Grilled bread with tomatoes, garlic, and basil\",\n        \"price\": 8.99,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Caesar Salad\",\n        \"description\": \"Romaine lettuce with Caesar dressing and croutons\",\n        \"price\": 9.5,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Grilled Salmon\",\n        \"description\": \"Fresh Atlantic salmon with lemon butter sauce\",\n        \"price\": 24.99,\n        \"category\": \"Main Course\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Beef Burger\",\n        \"description\": \"Angus beef burger with cheese, lettuce, and tomato\",\n        \"price\": 15.99,\n        \"category\": \"Main Course\",\n        \"available\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Chicken Alfredo\",\n        \"description\": \"Fettuccine pasta with creamy Alfredo sauce\",\n        \"price\": 18.5,\n        \"category\": \"Main Course\",\n        \"available\": false\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Chocolate Cake\",\n        \"description\": \"Rich chocolate layer cake with ganache\",\n        \"price\": 7.99,\n        \"category\": \"Dessert\",\n        \"available\": true\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Tiramisu\",\n        \"description\": \"Classic Italian coffee-flavored dessert\",\n        \"price\": 8.5,\n        \"category\": \"Dessert\",\n        \"available\": true\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Fresh Lemonade\",\n        \"description\": \"Homemade lemonade with mint\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\",\n        \"available\": true\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Cappuccino\",\n        \"description\": \"Espresso with steamed milk foam\",\n        \"price\": 5.5,\n        \"category\": \"Beverage\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get by id",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get by id",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu/category/Appetizer",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu",
+                "category",
+                "Appetizer"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:42:27 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 1,\n    \"name\": \"Bruschetta\",\n    \"description\": \"Grilled bread with tomatoes, garlic, and basil\",\n    \"price\": 8.99,\n    \"category\": \"Appetizer\",\n    \"available\": true\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get by category",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get by category",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu/category/Appetizer",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu",
+                "category",
+                "Appetizer"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:44:16 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Bruschetta\",\n        \"description\": \"Grilled bread with tomatoes, garlic, and basil\",\n        \"price\": 8.99,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Caesar Salad\",\n        \"description\": \"Romaine lettuce with Caesar dressing and croutons\",\n        \"price\": 9.5,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get according to availability",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get according to availability",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu/available?available=true",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu",
+                "available"
+              ],
+              "query": [
+                {
+                  "key": "available",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:46:00 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Bruschetta\",\n        \"description\": \"Grilled bread with tomatoes, garlic, and basil\",\n        \"price\": 8.99,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Caesar Salad\",\n        \"description\": \"Romaine lettuce with Caesar dressing and croutons\",\n        \"price\": 9.5,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Grilled Salmon\",\n        \"description\": \"Fresh Atlantic salmon with lemon butter sauce\",\n        \"price\": 24.99,\n        \"category\": \"Main Course\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Beef Burger\",\n        \"description\": \"Angus beef burger with cheese, lettuce, and tomato\",\n        \"price\": 15.99,\n        \"category\": \"Main Course\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Chocolate Cake\",\n        \"description\": \"Rich chocolate layer cake with ganache\",\n        \"price\": 7.99,\n        \"category\": \"Dessert\",\n        \"available\": true\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Tiramisu\",\n        \"description\": \"Classic Italian coffee-flavored dessert\",\n        \"price\": 8.5,\n        \"category\": \"Dessert\",\n        \"available\": true\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Fresh Lemonade\",\n        \"description\": \"Homemade lemonade with mint\",\n        \"price\": 4.5,\n        \"category\": \"Beverage\",\n        \"available\": true\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Cappuccino\",\n        \"description\": \"Espresso with steamed milk foam\",\n        \"price\": 5.5,\n        \"category\": \"Beverage\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "get by name",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "get by name",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu/search?name=Bruschetta",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Bruschetta"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:48:48 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Bruschetta\",\n        \"description\": \"Grilled bread with tomatoes, garlic, and basil\",\n        \"price\": 8.99,\n        \"category\": \"Appetizer\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Post",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Post",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\r\n        \"id\": 10,\r\n        \"name\": \"Coffe late\",\r\n        \"description\": \"Espresso with steamed milk foam\",\r\n        \"price\": 5.5,\r\n        \"category\": \"Beverage\",\r\n        \"available\": true\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9092/api/menu",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:54:43 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 10,\n    \"name\": \"Coffe late\",\n    \"description\": \"Espresso with steamed milk foam\",\n    \"price\": 5.5,\n    \"category\": \"Beverage\",\n    \"available\": true\n}"
+        }
+      ]
+    },
+    {
+      "name": "Put",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Put",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"Coffee late\",\r\n    \"description\": \"Espresso with steamed milk foam\",\r\n    \"price\": 4.5,\r\n    \"category\": \"Beverage\",\r\n    \"available\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9092//api/menu/10",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "",
+                "api",
+                "menu",
+                "10"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 09:02:57 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 10,\n    \"name\": \"Coffe late\",\n    \"description\": \"Espresso with steamed milk foam\",\n    \"price\": 5.5,\n    \"category\": \"Beverage\",\n    \"available\": false\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

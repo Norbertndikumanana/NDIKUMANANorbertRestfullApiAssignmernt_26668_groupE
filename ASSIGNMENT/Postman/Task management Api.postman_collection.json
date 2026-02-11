@@ -1,0 +1,374 @@
+{
+  "info": {
+    "_postman_id": "1e8f891d-ed54-4a37-a14f-146756ff4cd3",
+    "name": "Task management Api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52133708",
+    "_collection_link": "https://go.postman.co/collection/52133708-1e8f891d-ed54-4a37-a14f-146756ff4cd3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get all",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Get by id",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Get true /false",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get true /false",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8085/api/tasks/status?completed=true",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks",
+                "status"
+              ],
+              "query": [
+                {
+                  "key": "completed",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:51:09 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"taskId\": 3,\n        \"title\": \"Update dependencies\",\n        \"description\": \"Update all project dependencies to latest stable versions\",\n        \"completed\": true,\n        \"priority\": \"LOW\",\n        \"dueDate\": \"2026-02-10\"\n    },\n    {\n        \"taskId\": 6,\n        \"title\": \"Database backup\",\n        \"description\": \"Perform weekly database backup and verification\",\n        \"completed\": true,\n        \"priority\": \"HIGH\",\n        \"dueDate\": \"2026-02-08\"\n    },\n    {\n        \"taskId\": 7,\n        \"title\": \"Team meeting notes\",\n        \"description\": \"Document action items from weekly team meeting\",\n        \"completed\": true,\n        \"priority\": \"LOW\",\n        \"dueDate\": \"2026-02-09\"\n    },\n    {\n        \"taskId\": 11,\n        \"title\": \"Performance testing\",\n        \"description\": \"Run performance tests on new features\",\n        \"completed\": true,\n        \"priority\": \"MEDIUM\",\n        \"dueDate\": \"2026-02-07\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Priority",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Priority",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8085/api/tasks/priority/HIGH",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks",
+                "priority",
+                "HIGH"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:53:57 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"taskId\": 1,\n        \"title\": \"Complete project documentation\",\n        \"description\": \"Write comprehensive API documentation for the task management system\",\n        \"completed\": false,\n        \"priority\": \"HIGH\",\n        \"dueDate\": \"2026-02-15\"\n    },\n    {\n        \"taskId\": 4,\n        \"title\": \"Fix login bug\",\n        \"description\": \"Resolve authentication issue in login module\",\n        \"completed\": false,\n        \"priority\": \"HIGH\",\n        \"dueDate\": \"2026-02-11\"\n    },\n    {\n        \"taskId\": 6,\n        \"title\": \"Database backup\",\n        \"description\": \"Perform weekly database backup and verification\",\n        \"completed\": true,\n        \"priority\": \"HIGH\",\n        \"dueDate\": \"2026-02-08\"\n    },\n    {\n        \"taskId\": 9,\n        \"title\": \"Security audit\",\n        \"description\": \"Conduct security audit of API endpoints\",\n        \"completed\": false,\n        \"priority\": \"HIGH\",\n        \"dueDate\": \"2026-02-16\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Post",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Post",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\r\n        \"taskId\": 55,\r\n        \"title\": \"Complete project documentation\",\r\n        \"description\": \"Write comprehensive API documentation for the task management system\",\r\n        \"completed\": false,\r\n        \"priority\": \"HIGH\",\r\n        \"dueDate\": \"2026-02-15\"\r\n    },",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8085/api/tasks",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 15:02:31 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"taskId\": 12,\n    \"title\": \"Complete project documentation\",\n    \"description\": \"Write comprehensive API documentation for the task management system\",\n    \"completed\": false,\n    \"priority\": \"HIGH\",\n    \"dueDate\": \"2026-02-15\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Put",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Put",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"taskId\": 12,\r\n    \"title\": \"Complete project documentation\",\r\n    \"description\": \"Write comprehensive API documentation for the task management system\",\r\n    \"completed\": false,\r\n    \"priority\": \"LOW\",\r\n    \"dueDate\": \"2026-02-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8085/api/tasks/12",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks",
+                "12"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 15:04:59 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"taskId\": 12,\n    \"title\": \"Complete project documentation\",\n    \"description\": \"Write comprehensive API documentation for the task management system\",\n    \"completed\": false,\n    \"priority\": \"LOW\",\n    \"dueDate\": \"2026-02-15\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "PATCH",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "PATCH",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "localhost:8085/api/tasks/12/complete",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks",
+                "12",
+                "complete"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 15:06:25 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"taskId\": 12,\n    \"title\": \"Complete project documentation\",\n    \"description\": \"Write comprehensive API documentation for the task management system\",\n    \"completed\": true,\n    \"priority\": \"LOW\",\n    \"dueDate\": \"2026-02-15\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "DELETE",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8085/api/tasks/2",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "tasks",
+                "2"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 15:07:39 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}

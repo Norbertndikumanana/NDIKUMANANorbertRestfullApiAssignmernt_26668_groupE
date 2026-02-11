@@ -1,0 +1,233 @@
+{
+  "info": {
+    "_postman_id": "472f0f2e-351e-44b6-a2c1-216babfb1a1e",
+    "name": "Student api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52133708",
+    "_collection_link": "https://go.postman.co/collection/52133708-472f0f2e-351e-44b6-a2c1-216babfb1a1e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get by id",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8081/api/students/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "students",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:15:04 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"studentId\": 1,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john.doe@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.8\n    },\n    {\n        \"studentId\": 2,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\",\n        \"email\": \"jane.smith@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.9\n    },\n    {\n        \"studentId\": 3,\n        \"firstName\": \"Michael\",\n        \"lastName\": \"Johnson\",\n        \"email\": \"michael.j@university.edu\",\n        \"major\": \"Business\",\n        \"gpa\": 3.2\n    },\n    {\n        \"studentId\": 4,\n        \"firstName\": \"Emily\",\n        \"lastName\": \"Williams\",\n        \"email\": \"emily.w@university.edu\",\n        \"major\": \"Engineering\",\n        \"gpa\": 3.6\n    },\n    {\n        \"studentId\": 5,\n        \"firstName\": \"David\",\n        \"lastName\": \"Brown\",\n        \"email\": \"david.b@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.4\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get by major",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get by major",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8081/api/students/major/Computer Science",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "students",
+                "major",
+                "Computer Science"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:18:45 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"studentId\": 1,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john.doe@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.8\n    },\n    {\n        \"studentId\": 2,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\",\n        \"email\": \"jane.smith@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.9\n    },\n    {\n        \"studentId\": 5,\n        \"firstName\": \"David\",\n        \"lastName\": \"Brown\",\n        \"email\": \"david.b@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.4\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "PUT",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n    {\r\n        \"studentId\": 6,\r\n        \"firstName\": \"Norbert\",\r\n        \"lastName\": \"ert\",\r\n        \"email\": \"norbert.doe@university.edu\",\r\n        \"major\": \"Busines\",\r\n        \"gpa\": 4.0\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8081/api/students/6",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "students",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "post",
+          "originalRequest": {
+            "method": "GET",
+            "header": []
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "get 3.5",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "get 3.5",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:9092/api/menu",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "menu"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 08:37:22 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"studentId\": 1,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john.doe@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.8\n    },\n    {\n        \"studentId\": 2,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\",\n        \"email\": \"jane.smith@university.edu\",\n        \"major\": \"Computer Science\",\n        \"gpa\": 3.9\n    },\n    {\n        \"studentId\": 4,\n        \"firstName\": \"Emily\",\n        \"lastName\": \"Williams\",\n        \"email\": \"emily.w@university.edu\",\n        \"major\": \"Engineering\",\n        \"gpa\": 3.6\n    },\n    {\n        \"studentId\": 6,\n        \"firstName\": \"Norbert\",\n        \"lastName\": \"ert\",\n        \"email\": \"norbert.doe@university.edu\",\n        \"major\": \"Busines\",\n        \"gpa\": 4\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

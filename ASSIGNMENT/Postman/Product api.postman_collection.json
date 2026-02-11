@@ -1,0 +1,531 @@
+{
+  "info": {
+    "_postman_id": "88298002-e432-4f2d-8b64-4427af67c58a",
+    "name": "Product api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52133708",
+    "_collection_link": "https://go.postman.co/collection/52133708-88298002-e432-4f2d-8b64-4427af67c58a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get all",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "get all",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:27:47 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"productId\": 1,\n        \"name\": \"iPhone 15 Pro\",\n        \"description\": \"Latest Apple smartphone with A17 chip\",\n        \"price\": 999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 50,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 2,\n        \"name\": \"Samsung Galaxy S24\",\n        \"description\": \"Flagship Android smartphone\",\n        \"price\": 899.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 35,\n        \"brand\": \"Samsung\"\n    },\n    {\n        \"productId\": 3,\n        \"name\": \"MacBook Pro 14\",\n        \"description\": \"Professional laptop with M3 chip\",\n        \"price\": 1999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 20,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 4,\n        \"name\": \"Dell XPS 15\",\n        \"description\": \"High-performance Windows laptop\",\n        \"price\": 1599.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 15,\n        \"brand\": \"Dell\"\n    },\n    {\n        \"productId\": 5,\n        \"name\": \"Nike Air Max\",\n        \"description\": \"Comfortable running shoes\",\n        \"price\": 129.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 100,\n        \"brand\": \"Nike\"\n    },\n    {\n        \"productId\": 6,\n        \"name\": \"Adidas Ultraboost\",\n        \"description\": \"Premium athletic sneakers\",\n        \"price\": 149.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 75,\n        \"brand\": \"Adidas\"\n    },\n    {\n        \"productId\": 7,\n        \"name\": \"Levi's 501 Jeans\",\n        \"description\": \"Classic denim jeans\",\n        \"price\": 69.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 200,\n        \"brand\": \"Levi's\"\n    },\n    {\n        \"productId\": 8,\n        \"name\": \"Instant Pot Duo\",\n        \"description\": \"7-in-1 electric pressure cooker\",\n        \"price\": 89.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 60,\n        \"brand\": \"Instant Pot\"\n    },\n    {\n        \"productId\": 9,\n        \"name\": \"Dyson V15\",\n        \"description\": \"Cordless vacuum cleaner\",\n        \"price\": 649.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 25,\n        \"brand\": \"Dyson\"\n    },\n    {\n        \"productId\": 10,\n        \"name\": \"KitchenAid Mixer\",\n        \"description\": \"Stand mixer for baking\",\n        \"price\": 379.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 40,\n        \"brand\": \"KitchenAid\"\n    },\n    {\n        \"productId\": 11,\n        \"name\": \"Sony PS5\",\n        \"description\": \"Gaming console - out of stock\",\n        \"price\": 499.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 0,\n        \"brand\": \"Sony\"\n    }\n]"
+        },
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:26:56 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"productId\": 1,\n    \"name\": \"iPhone 15 Pro\",\n    \"description\": \"Latest Apple smartphone with A17 chip\",\n    \"price\": 999.99,\n    \"category\": \"Electronics\",\n    \"stockQuantity\": 50,\n    \"brand\": \"Apple\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "get by category",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "get by category",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/category/Electronics",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "category",
+                "Electronics"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:30:00 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"productId\": 1,\n        \"name\": \"iPhone 15 Pro\",\n        \"description\": \"Latest Apple smartphone with A17 chip\",\n        \"price\": 999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 50,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 2,\n        \"name\": \"Samsung Galaxy S24\",\n        \"description\": \"Flagship Android smartphone\",\n        \"price\": 899.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 35,\n        \"brand\": \"Samsung\"\n    },\n    {\n        \"productId\": 3,\n        \"name\": \"MacBook Pro 14\",\n        \"description\": \"Professional laptop with M3 chip\",\n        \"price\": 1999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 20,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 4,\n        \"name\": \"Dell XPS 15\",\n        \"description\": \"High-performance Windows laptop\",\n        \"price\": 1599.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 15,\n        \"brand\": \"Dell\"\n    },\n    {\n        \"productId\": 11,\n        \"name\": \"Sony PS5\",\n        \"description\": \"Gaming console - out of stock\",\n        \"price\": 499.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 0,\n        \"brand\": \"Sony\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Kryword",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Kryword",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/price-range?min={min}&max=max",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "price-range"
+              ],
+              "query": [
+                {
+                  "key": "min",
+                  "value": "{min}"
+                },
+                {
+                  "key": "max",
+                  "value": "max"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:32:31 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"productId\": 2,\n        \"name\": \"Samsung Galaxy S24\",\n        \"description\": \"Flagship Android smartphone\",\n        \"price\": 899.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 35,\n        \"brand\": \"Samsung\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Stock",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Stock",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/in-stock",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "in-stock"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:35:18 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"productId\": 1,\n        \"name\": \"iPhone 15 Pro\",\n        \"description\": \"Latest Apple smartphone with A17 chip\",\n        \"price\": 999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 50,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 2,\n        \"name\": \"Samsung Galaxy S24\",\n        \"description\": \"Flagship Android smartphone\",\n        \"price\": 899.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 35,\n        \"brand\": \"Samsung\"\n    },\n    {\n        \"productId\": 3,\n        \"name\": \"MacBook Pro 14\",\n        \"description\": \"Professional laptop with M3 chip\",\n        \"price\": 1999.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 20,\n        \"brand\": \"Apple\"\n    },\n    {\n        \"productId\": 4,\n        \"name\": \"Dell XPS 15\",\n        \"description\": \"High-performance Windows laptop\",\n        \"price\": 1599.99,\n        \"category\": \"Electronics\",\n        \"stockQuantity\": 15,\n        \"brand\": \"Dell\"\n    },\n    {\n        \"productId\": 5,\n        \"name\": \"Nike Air Max\",\n        \"description\": \"Comfortable running shoes\",\n        \"price\": 129.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 100,\n        \"brand\": \"Nike\"\n    },\n    {\n        \"productId\": 6,\n        \"name\": \"Adidas Ultraboost\",\n        \"description\": \"Premium athletic sneakers\",\n        \"price\": 149.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 75,\n        \"brand\": \"Adidas\"\n    },\n    {\n        \"productId\": 7,\n        \"name\": \"Levi's 501 Jeans\",\n        \"description\": \"Classic denim jeans\",\n        \"price\": 69.99,\n        \"category\": \"Clothing\",\n        \"stockQuantity\": 200,\n        \"brand\": \"Levi's\"\n    },\n    {\n        \"productId\": 8,\n        \"name\": \"Instant Pot Duo\",\n        \"description\": \"7-in-1 electric pressure cooker\",\n        \"price\": 89.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 60,\n        \"brand\": \"Instant Pot\"\n    },\n    {\n        \"productId\": 9,\n        \"name\": \"Dyson V15\",\n        \"description\": \"Cordless vacuum cleaner\",\n        \"price\": 649.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 25,\n        \"brand\": \"Dyson\"\n    },\n    {\n        \"productId\": 10,\n        \"name\": \"KitchenAid Mixer\",\n        \"description\": \"Stand mixer for baking\",\n        \"price\": 379.99,\n        \"category\": \"Home & Kitchen\",\n        \"stockQuantity\": 40,\n        \"brand\": \"KitchenAid\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Post",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Post",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\r\n        \"productId\": 25,\r\n        \"name\": \"Dyson V16\",\r\n        \"description\": \"Cordless vacuum cleaner\",\r\n        \"price\": 649.99,\r\n        \"category\": \"Home & Kitchen\",\r\n        \"stockQuantity\": 25,\r\n        \"brand\": \"Dyson\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8083/api/products",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:37:50 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"productId\": 12,\n    \"name\": \"Dyson V16\",\n    \"description\": \"Cordless vacuum cleaner\",\n    \"price\": 649.99,\n    \"category\": \"Home & Kitchen\",\n    \"stockQuantity\": 25,\n    \"brand\": \"Dyson\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Put",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Put",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"productId\": 12,\r\n    \"name\": \"Dyson V16\",\r\n    \"description\": \"Cordless vacuum cleaner\",\r\n    \"price\": 649.99,\r\n    \"category\": \"Home Appliances\",\r\n    \"stockQuantity\": 25,\r\n    \"brand\": \"Dyson\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8083/api/products/12",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "12"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:39:41 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"productId\": 12,\n    \"name\": \"Dyson V16\",\n    \"description\": \"Cordless vacuum cleaner\",\n    \"price\": 649.99,\n    \"category\": \"Home Appliances\",\n    \"stockQuantity\": 25,\n    \"brand\": \"Dyson\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Patch",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Patch",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/12/stock?quantity=35",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "12",
+                "stock"
+              ],
+              "query": [
+                {
+                  "key": "quantity",
+                  "value": "35"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:42:25 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"productId\": 12,\n    \"name\": \"Dyson V16\",\n    \"description\": \"Cordless vacuum cleaner\",\n    \"price\": 649.99,\n    \"category\": \"Home Appliances\",\n    \"stockQuantity\": 35,\n    \"brand\": \"Dyson\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Delete",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8083/api/products/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "api",
+                "products",
+                "3"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Wed, 11 Feb 2026 14:43:59 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}
