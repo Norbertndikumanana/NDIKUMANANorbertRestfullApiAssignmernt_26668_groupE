@@ -14,6 +14,7 @@ A comprehensive collection of Spring Boot RESTful APIs demonstrating CRUD operat
 - [Installation & Setup](#installation--setup)
 - [API Documentation](#api-documentation)
 - [Postman Collections](#postman-collections)
+- [Screenshots](#screenshots)
 - [Project Structure](#project-structure)
 - [Running the Applications](#running-the-applications)
 - [Testing](#testing)
@@ -323,6 +324,76 @@ Each collection includes:
 - ✅ Expected responses
 - ✅ HTTP status codes
 
+## 📸 Screenshots
+
+All API endpoints have been tested in Postman. Screenshots of test results are available in the `Screemshot web/` directory, organized by project.
+
+### 1. Library Book Management API
+**Location:** `Screemshot web/libary/`
+
+- **Get All Books** - `get all.png` - Retrieves all books in the library
+- **Get Book by ID** - `det by id.png` - Fetches a specific book by its ID
+- **POST Request** - `Post.png` - Creates a new book entry
+- **DELETE Request** - `Delete.png` - Removes a book from the library
+- **Postman Collection** - `request postman.png` - Overview of all library API requests
+
+### 2. Student Registration API
+**Location:** `Screemshot web/student/`
+
+- **Get All Students** - `get all .png` - Lists all registered students
+- **Get Student by ID** - `get by id.png` & `get by id .png` - Retrieves specific student details
+- **Filter by GPA** - `get 3.5.png` - Filters students with GPA >= 3.5
+- **POST Request** - `post .png` - Registers a new student
+- **PUT Request** - `put.png` - Updates student information
+
+### 3. Restaurant Menu API
+**Location:** `Screemshot web/Restraunt Menu/`
+
+- **Get All Menu Items** - `Get Menu.png` - Displays complete restaurant menu
+- **Get by ID** - `get by id.png` - Retrieves specific menu item details
+- **Filter by Category** - `category.png` - Filters menu items by category
+- **Filter by Availability** - `availability.png` - Shows only available items
+- **Search by Name** - `bruchette.png` - Searches menu items by name
+- **POST Request** - `Post.png` - Adds new menu item
+- **PUT Request** - `put.png` - Updates menu item availability
+- **DELETE Request** - `Delete.png` - Removes menu item
+
+### 4. E-Commerce Product API
+**Location:** `Screemshot web/prduct/`
+
+- **Get All Products** - `get all.png` - Lists all products in catalog
+- **Get by ID** - `select by id.png` - Retrieves specific product details
+- **Filter by Category** - `getbycategories.png` & `electromiocs.png` - Filters products by category
+- **Search by Keyword** - `getbykeyword.png` - Searches products by keyword
+- **Filter by Stock** - `get by stock.png` - Shows in-stock products
+- **Price Range Filter** - `max.png` - Filters products by price range
+- **POST Request** - `post.png` - Adds new product
+- **PUT Request** - `put.png` - Updates product details
+- **PATCH Request** - `patch.png` - Updates product stock quantity
+- **DELETE Request** - `Delete.png` - Removes product from catalog
+
+### 5. Task Management API
+**Location:** `Screemshot web/Taskmanagement/`
+
+- **Get All Tasks** - `Get all.png` - Lists all tasks
+- **Get by ID** - `getbyid.png` - Retrieves specific task details
+- **Filter by Status (Completed)** - `gettrue.png` - Shows completed tasks
+- **Filter by Status (Incomplete)** - `getfalse.png` - Shows incomplete tasks
+- **Filter by Priority** - `GetHigh.png` - Filters tasks by HIGH priority
+- **PUT Request** - `Put.png` - Updates task information
+- **PATCH Request** - `Patch.png` - Marks task as completed
+- **DELETE Request** - `Delete.png` - Removes task
+
+### Screenshot Summary
+
+All screenshots demonstrate:
+- ✅ Successful API responses with proper status codes
+- ✅ Request and response body formats
+- ✅ Query parameters and path variables in action
+- ✅ CRUD operations (Create, Read, Update, Delete)
+- ✅ Search and filter functionality
+- ✅ Proper HTTP methods (GET, POST, PUT, PATCH, DELETE)
+
 ## 📂 Project Structure
 
 ```
@@ -333,6 +404,13 @@ ASSIGNMENT/
 │   ├── Restrauntant api.postman_collection.json
 │   ├── Product api.postman_collection.json
 │   └── Task management Api.postman_collection.json
+│
+├── Screemshot web/                   # API Testing Screenshots
+│   ├── libary/                       # Library API screenshots
+│   ├── student/                      # Student API screenshots
+│   ├── Restraunt Menu/               # Restaurant Menu API screenshots
+│   ├── prduct/                       # Product API screenshots
+│   └── Taskmanagement/               # Task Management API screenshots
 │
 ├── question2-student-api/            # Student Registration API
 │   ├── src/
